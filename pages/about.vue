@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h2>Hello, world!</h2>
-    Hello, world!
-    <a href="/about">about page</a>
+    <a href="/">go back to home</a>
   </div>
 </template>
 
