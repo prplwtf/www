@@ -4,6 +4,7 @@
       <div
         class="container max-w-screen-sm border-2 border-dashed border-overlay0 p-12"
       >
+        <img src="~/assets/images/index.png" width="36" />
         <NuxtPage />
       </div>
     </div>
