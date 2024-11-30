@@ -15,11 +15,12 @@
             class="me-2 object-contain"
           />
           <span class="inline-block align-middle text-overlay2">
-            <a href="/" class="ms-2 underline">home</a>
-            <a href="/projects" class="ms-2 underline">projects</a>
-            <a href="/keys" class="ms-2 underline">keys</a>
+            <NuxtLink to="/" class="ms-2 underline">home</NuxtLink>
+            <NuxtLink to="/projects" class="ms-2 underline">projects</NuxtLink>
+            <NuxtLink to="/keys" class="ms-2 underline">keys</NuxtLink>
           </span>
         </div>
+
         <NuxtPage />
       </div>
     </div>
