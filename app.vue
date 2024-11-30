@@ -8,8 +8,7 @@
       <div
         class="container max-w-screen-sm border border-overlay2 bg-crust p-12"
       >
-        <!-- Navigation bar -->
-        <div class="flex justify-between pb-5">
+        <div class="flex justify-between pb-8">
           <img
             src="~/assets/images/index.png"
             width="32"
@@ -21,7 +20,6 @@
             <a href="/keys" class="ms-2 underline">keys</a>
           </span>
         </div>
-
         <NuxtPage />
       </div>
     </div>
