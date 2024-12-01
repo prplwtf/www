@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row">
-    <img
-      src="~/assets/images/fox.png"
+    <NuxtImg
+      src="/assets/images/fox.png"
       width="128"
       class="me-4 self-start border border-dashed border-overlay0 bg-base object-contain px-1 pt-2"
     />
