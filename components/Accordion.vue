@@ -19,12 +19,12 @@
             viewBox="0 0 24 24"
             width="24"
             height="24"
-            color="#ffffff"
-            fill="none"
+            class="fill-base stroke-overlay0"
           >
             <path
               d="M18 15L12 9L6 15"
               stroke="currentColor"
+              class="stroke-inherit"
               stroke-width="1.5"
               stroke-miterlimit="16"
             />

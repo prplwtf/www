@@ -1,6 +1,6 @@
 <template>
   <Accordion :items="accordionItems" />
-  <div class="mt-5 flex flex-row text-overlay0">
+  <div class="mt-5 flex flex-row items-center text-overlay0">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
