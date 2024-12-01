@@ -1,7 +1,5 @@
-<template>
-  <div>meow</div>
-</template>
+<template>meow</template>
 
-<script lang="ts" setup></script>
+<script></script>
 
 <style></style>
