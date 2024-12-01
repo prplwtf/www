@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row">
+  <div class="mb-4 flex flex-row">
     <NuxtImg
       src="/assets/images/fox.png"
       width="128"
