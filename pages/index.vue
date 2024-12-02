@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       age: 0,
-      birthTimestamp: 1226005200 * 1000,
+      birthTimestamp: 1225961400 * 1000,
       increment: 0,
     };
   },
