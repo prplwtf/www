@@ -7,14 +7,15 @@ let ctx = null;
 let animationFrame = null;
 let chars = [];
 
-// Matrix character class
 class Char {
   constructor(x, y, char) {
     this.x = x;
     this.y = y;
     this.char = char;
-    this.speed = 0.8 + Math.random() * 1.2; // Slightly slower speed
-    this.opacity = 0.1 + Math.random() * 0.3; // Lower base opacity
+    this.speed = 0.8 + Math.random() * 1.2;
+    this.opacity = 0.05 + Math.random() * 0.15;
+    // Track the actual position separately from the rendered position
+    this.actualY = y;
   }
 
   draw() {
@@ -23,30 +24,31 @@ class Char {
       this.y - cursor.value.y,
     );
 
-    // Reduced highlight intensity
-    const highlight = Math.max(0, 0.6 - distToCursor / 150);
+    const highlight = Math.max(0, 0.5 - distToCursor / 250);
     ctx.fillStyle = `rgba(205, 214, 244, ${this.opacity + highlight})`;
     ctx.fillText(this.char, this.x, this.y);
   }
 
   update() {
-    this.y += this.speed;
-    if (this.y > window.innerHeight) {
-      this.y = 0;
-      this.opacity = 0.1 + Math.random() * 0.3;
+    this.actualY += this.speed;
+    // Update the visible Y position with modulo to keep it within screen bounds
+    this.y = this.actualY % window.innerHeight;
+
+    // Only randomize character when it wraps around
+    if (this.y < this.speed) {
+      this.char = String.fromCharCode(0x30a0 + Math.random() * 96);
+      this.opacity = 0.05 + Math.random() * 0.15;
     }
   }
 }
 
-// Initialize the canvas
 const init = () => {
   if (!canvas.value) return;
 
-  ctx = canvas.value.getContext("2d");
+  ctx = canvas.value.getContext("2d", { alpha: false });
   canvas.value.width = window.innerWidth;
   canvas.value.height = window.innerHeight;
 
-  // Create matrix characters
   const fontSize = 14;
   const columns = Math.floor(window.innerWidth / fontSize);
 
@@ -61,10 +63,8 @@ const init = () => {
   }
 };
 
-// Animation loop
 const animate = () => {
-  // Increased fade rate for shorter trails
-  ctx.fillStyle = "rgba(17, 17, 27, 0.5)";
+  ctx.fillStyle = "rgb(17, 17, 27)";
   ctx.fillRect(0, 0, canvas.value.width, canvas.value.height);
 
   ctx.font = "14px monospace";
@@ -76,7 +76,6 @@ const animate = () => {
   animationFrame = requestAnimationFrame(animate);
 };
 
-// Track cursor position
 const handleMouseMove = (e) => {
   cursor.value = {
     x: e.clientX,
@@ -84,7 +83,6 @@ const handleMouseMove = (e) => {
   };
 };
 
-// Handle window resize
 const handleResize = () => {
   if (canvas.value) {
     canvas.value.width = window.innerWidth;
