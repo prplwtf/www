@@ -43,13 +43,13 @@ const calculateFontSize = () => {
   const baseSize = 16;
   const screenWidth = window.innerWidth;
 
-  // For screens smaller than 768px (typical mobile breakpoint)
+  // For smaller screens
   if (screenWidth < 768) {
-    return Math.max(12, baseSize * (screenWidth / 768));
+    return Math.max(18, baseSize * (screenWidth / 768));
   }
 
   // For larger screens
-  return Math.min(20, Math.max(14, baseSize * (screenWidth / 1920)));
+  return Math.min(22, Math.max(18, baseSize * (screenWidth / 1920)));
 };
 
 const init = () => {
