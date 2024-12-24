@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Emma's homepage</Title>
+  </Head>
   <NuxtLayout>
     <Backdrop />
 
