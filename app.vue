@@ -50,6 +50,12 @@
   </NuxtLayout>
 </template>
 
+<script
+  defer
+  data-domain="prpl.wtf"
+  src="https://plausible.prpl.wtf/js/script.js"
+></script>
+
 <script>
 import Backdrop from "~/components/Backdrop.vue";
 import AnimatedLink from "~/components/AnimatedLink.vue";
