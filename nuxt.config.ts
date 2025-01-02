@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/image", "@nuxtjs/plausible"],
   plausible: {
-    ignoredHostnames: ["localhost"],
-    apiHost: "plausible.prpl.wtf",
+    apiHost: "https://plausible.prpl.wtf",
+    domain: "prpl.wtf",
   },
   postcss: {
     plugins: {
