@@ -31,7 +31,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: 'yarn'
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -40,17 +40,12 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: nuxt
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
+      - name: Clear cache # Add a step to clear any potential corrupted cache
+        run: |
+          rm -rf .nuxt
+          rm -rf node_modules/.cache
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: Static HTML export with Nuxt
         run: yarn run generate
       - name: Upload artifact
