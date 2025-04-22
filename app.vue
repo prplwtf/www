@@ -35,6 +35,9 @@
             <NuxtLink to="/" class="ms-2">
               <AnimatedLink text="home" />
             </NuxtLink>
+            <NuxtLink to="/friends" class="ms-2">
+              <AnimatedLink text="friends" />
+            </NuxtLink>
             <NuxtLink to="/projects" class="ms-2">
               <AnimatedLink text="projects" />
             </NuxtLink>
