@@ -32,5 +32,13 @@
         class="border border-surface0 bg-crust"
       />
     </NuxtLink>
+    <NuxtLink to="https://macgould.xyz">
+      <NuxtImg
+        src="/assets/images/88x31/macgould_xyz.png"
+        width="88"
+        height="31"
+        class="border border-surface0 bg-crust"
+      />
+    </NuxtLink>
   </div>
 </template>
