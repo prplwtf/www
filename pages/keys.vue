@@ -15,9 +15,9 @@
         class="fill-inherit"
       />
     </svg>
-    <span class="text-inherit"
-      >Inactive and retired devices are excluded from this list.</span
-    >
+    <span class="text-inherit">
+      Inactive and retired devices are excluded from this list.
+    </span>
   </div>
 </template>
 
