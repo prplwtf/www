@@ -5,6 +5,7 @@
         src="/assets/images/88x31/prpl_wtf.gif"
         width="88"
         height="31"
+        densities="x1"
         class="border border-surface0 bg-crust"
       />
     </NuxtLink>
@@ -13,6 +14,7 @@
         src="/assets/images/88x31/auri_lol.gif"
         width="88"
         height="31"
+        densities="x1"
         class="border border-surface0 bg-crust"
       />
     </NuxtLink>
@@ -21,6 +23,7 @@
         src="/assets/images/88x31/liv_town.gif"
         width="88"
         height="31"
+        densities="x1"
         class="border border-surface0 bg-crust"
       />
     </NuxtLink>
@@ -29,6 +32,7 @@
         src="/assets/images/88x31/lily_pet.gif"
         width="88"
         height="31"
+        densities="x1"
         class="border border-surface0 bg-crust"
       />
     </NuxtLink>
@@ -37,6 +41,7 @@
         src="/assets/images/88x31/macgould_xyz.png"
         width="88"
         height="31"
+        densities="x1"
         class="border border-surface0 bg-crust"
       />
     </NuxtLink>
