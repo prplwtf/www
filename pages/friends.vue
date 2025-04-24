@@ -1,6 +1,6 @@
 <template>
   <div class="gap- flex flex-wrap justify-start">
-    <NuxtLink to="https://prpl.wtf">
+    <NuxtLink to="https://prpl.wtf" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/prpl_wtf.gif"
         alt="prpl.wtf"
@@ -10,7 +10,7 @@
         class="border border-surface0 bg-crust image-crisp"
       />
     </NuxtLink>
-    <NuxtLink to="https://auri.lol">
+    <NuxtLink to="https://auri.lol" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/auri_lol.gif"
         alt="auri.lol"
@@ -20,7 +20,7 @@
         class="border border-surface0 bg-crust image-crisp"
       />
     </NuxtLink>
-    <NuxtLink to="https://liv.town">
+    <NuxtLink to="https://liv.town" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/liv_town.gif"
         alt="liv.town"
@@ -30,7 +30,7 @@
         class="border border-surface0 bg-crust image-crisp"
       />
     </NuxtLink>
-    <NuxtLink to="https://lily.pet">
+    <NuxtLink to="https://lily.pet" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/lily_pet.gif"
         alt="lily.pet"
@@ -40,7 +40,7 @@
         class="border border-surface0 bg-crust image-crisp"
       />
     </NuxtLink>
-    <NuxtLink to="https://bad.cash">
+    <NuxtLink to="https://bad.cash" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/bad_cash.gif"
         alt="bad.cash"
@@ -50,7 +50,7 @@
         class="border border-surface0 bg-crust image-crisp"
       />
     </NuxtLink>
-    <NuxtLink to="https://macgould.xyz">
+    <NuxtLink to="https://macgould.xyz" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/macgould_xyz.png"
         alt="macgould.xyz"
