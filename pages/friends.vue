@@ -7,7 +7,7 @@
         width="88"
         height="31"
         densities="x1"
-        class="border border-surface0 bg-crust image-crisp"
+        class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
     <NuxtLink to="https://auri.lol" rel="noopener">
@@ -17,7 +17,7 @@
         width="88"
         height="31"
         densities="x1"
-        class="border border-surface0 bg-crust image-crisp"
+        class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
     <NuxtLink to="https://liv.town" rel="noopener">
@@ -27,7 +27,7 @@
         width="88"
         height="31"
         densities="x1"
-        class="border border-surface0 bg-crust image-crisp"
+        class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
     <NuxtLink to="https://lily.pet" rel="noopener">
@@ -37,7 +37,7 @@
         width="88"
         height="31"
         densities="x1"
-        class="border border-surface0 bg-crust image-crisp"
+        class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
     <NuxtLink to="https://bad.cash" rel="noopener">
@@ -47,7 +47,7 @@
         width="88"
         height="31"
         densities="x1"
-        class="border border-surface0 bg-crust image-crisp"
+        class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
     <NuxtLink to="https://macgould.xyz" rel="noopener">
@@ -57,7 +57,17 @@
         width="88"
         height="31"
         densities="x1"
-        class="border border-surface0 bg-crust image-crisp"
+        class="image-crisp border border-surface0 bg-crust"
+      />
+    </NuxtLink>
+    <NuxtLink to="https://slimi.xyz/" rel="noopener">
+      <NuxtImg
+        src="/assets/images/88x31/slimi_xyz.gif"
+        alt="slimi.xyz"
+        width="88"
+        height="31"
+        densities="x1"
+        class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
   </div>
