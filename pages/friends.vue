@@ -50,6 +50,16 @@
         class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
+    <NuxtLink to="https://img.fish" rel="noopener">
+      <NuxtImg
+        src="/assets/images/88x31/img_fish.gif"
+        alt="img.fish"
+        width="88"
+        height="31"
+        densities="x1"
+        class="image-crisp border border-surface0 bg-crust"
+      />
+    </NuxtLink>
     <NuxtLink to="https://macgould.xyz" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/macgould_xyz.png"
