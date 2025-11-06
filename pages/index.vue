@@ -14,7 +14,7 @@
         >
         and I'm
         <AgeCounter
-          :birthTimestamp="1225990200"
+          :birthTimestamp="1225990200000"
           :width="107"
           :height="18"
           fontSize="16"
