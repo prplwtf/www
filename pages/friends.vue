@@ -10,6 +10,16 @@
         class="image-crisp border border-surface0 bg-crust"
       />
     </NuxtLink>
+    <NuxtLink to="https://vvqb.dev" rel="noopener">
+      <NuxtImg
+        src="/assets/images/88x31/vvqb_dev.gif"
+        alt="vvqb.dev"
+        width="88"
+        height="31"
+        densities="x1"
+        class="image-crisp border border-surface0 bg-crust"
+      />
+    </NuxtLink>
     <NuxtLink to="https://auri.lol" rel="noopener">
       <NuxtImg
         src="/assets/images/88x31/auri_lol.gif"
